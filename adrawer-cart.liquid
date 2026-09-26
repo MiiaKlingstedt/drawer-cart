@@ -55,7 +55,6 @@
 :root {
     --cart-width: 20rem;
     --cart-offset: 0;
-    --cart-height: 100vh;
 }
 .acart-wrapper {
     position: relative;
@@ -75,7 +74,8 @@
     top: var(--cart-offset);
     right: calc(var(--cart-width)*-1 - 2rem);
     width: var(--cart-width);
-    height: var(--cart-height);
+    height: 100vh;
+    height: -webkit-fill-available;
     max-height: calc(100% - var(--o));
     max-width: 100%;
     background: var(--bg);
